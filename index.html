@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" href="favicon.png">
+	<title>Grouptabs</title>
+	<style>
+		body {
+			font-family: verdana, sans-serif;
+			color: rgb(50, 50, 50);
+			background: rgb(251, 248, 239);
+		}
+		a, a:link, a:visited {
+			color: rgb(240, 99, 97);
+			text-decoration: none;
+		}
+		#logo {
+			width: 200px;
+		}
+		@media screen and (min-width: 800px) {
+			#main {
+				position: relative;
+				margin: 2em auto 0;
+				width: 540px;  /* 760 - 220 padding */
+				padding-left: 220px;
+			}
+			#logo {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		@media screen and (max-width: 500px) {
+			#logo {
+				width: 80px;
+			}
+		}
+	</style>
+</head>
+<div id="main">
+	<h1>Grouptabs</h1>
+	<img id="logo" src="logo.png" alt="">
+	<p>Grouptabs is an app to track expenses in a group of people.</p>
+	<p>When you share things with friends, just let one person pay and note the details in the app. Next time someone else pays. The app helps you keep the balance by indicating if you‘re currently on red or green. Ideally you never have to settle the tab. But of course you can.</p>
+	<p>Not everybody wants to share everything. Grouptabs lets you enter any constellation of participants for an expense. You can even add people on the fly. And have multiple people pay arbitrary parts of it. It's easy and flexible.</p>
+	<hr>
+	<p>Currently there‘s only a prototype with most of the features implemented. It is a client-side web app and should work offline. The user interface is for phone-size touch devices. For syncing with other devices it uses <a href="http://remotestorage.io">remoteStorage</a>. You can collaborate on tabs by sharing a remoteStorage account.</p>
+	<p>The source code is on <a href="https://github.com/xMartin/grouptabs">Github</a> (no explicit license, yet).</p>
+	<p><strong><a href="https://grouptabs.5apps.com">Launch app</a></strong></p>
+</div>
