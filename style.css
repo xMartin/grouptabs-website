@@ -1,0 +1,53 @@
+@font-face {
+	font-family: SourceSansPro-Regular;
+	src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: SourceSansPro-Semibold;
+	src: url('fonts/SourceSansPro-Semibold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	color: rgb(50, 50, 50);
+	background: rgb(251, 248, 239);
+	font-size: 18px;
+	font-family: SourceSansPro-Regular, sans-serif;
+}
+
+a, a:link, a:visited {
+	color: rgb(240, 99, 97);
+	text-decoration: none;
+}
+h1,
+strong {
+	font-family: SourceSansPro-Semibold, sans-serif;
+	font-weight: normal;
+}
+#logo {
+	width: 200px;
+}
+#main div {
+	color: #aaa;
+}
+@media screen and (min-width: 800px) {
+	#main {
+		position: relative;
+		margin: 2em auto;
+		width: 540px;  /* 760 - 220 padding */
+		padding-left: 220px;
+	}
+	#logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+@media screen and (max-width: 500px) {
+	#logo {
+		width: 80px;
+	}
+}
