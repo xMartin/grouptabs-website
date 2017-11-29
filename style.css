@@ -46,7 +46,7 @@ strong {
 }
 
 a, a:link, a:visited {
-	color: rgb(240, 99, 97);
+	color: #44f;
 	text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ a, a:link, a:visited {
 	display: inline-block;
 	padding: 10px 12px;
 	width: 40%;
-    background: rgb(240, 99, 97);
+    background: #44f;
     color: #fff !important;
     border-radius: 3px;
 	font-weight: bold;
