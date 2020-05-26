@@ -1,3 +1,12 @@
+:root {
+	--color-cta: #44f;
+	--color-cta-opposite: #fff;
+	--main-text-color: #131313;
+	--main-background-color: #f5f5f5;
+	--subtle-text-color: #707070;
+	--divider-color: #e5e5e5;
+}
+
 @font-face {
 	font-family: SourceSansPro;
 	font-display: optional;
@@ -18,9 +27,9 @@
 
 body {
 	margin: 0;
-	color: #131313;
+	color: var(--main-text-color);
 	font-size: 18px;
-	background: #f2f2f2;
+	background: var(--main-background-color);
 	font-family: SourceSansPro, sans-serif;
 }
 
@@ -45,17 +54,20 @@ body {
 }
 
 a, a:link, a:visited {
-	color: #44f;
+	color: var(--color-cta);
 	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 
 .button {
 	display: inline-block;
 	padding: 10px 12px;
 	width: 40%;
-	background: #44f;
-	color: #fff !important;
-	border-radius: 3px;
+	background: var(--color-cta);
+	color: var(--color-cta-opposite) !important;
+	border-radius: 5px;
 	font-weight: bold;
 }
 
@@ -64,9 +76,11 @@ a, a:link, a:visited {
 }
 
 hr {
-	border-color: rgba(50,50,50,.1);
+	border: 0;
+	height: 0;
+	border-top: 1px solid var(--divider-color);
 }
 
 #main div {
-	opacity: .5;
+	color: var(--subtle-text-color);
 }
