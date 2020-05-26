@@ -46,11 +46,18 @@ body {
 	}
 }
 
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header > * {
+	margin: 0 .125em;
+}
+
 #logo {
 	width: 80px;
 	border-radius: 100px;
-	vertical-align: middle;
-	text-align: center;
 }
 
 a, a:link, a:visited {
